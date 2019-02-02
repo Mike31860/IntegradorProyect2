@@ -18,8 +18,14 @@ namespace ProyectoNumero2
 {
     public partial class Form1 : Form
     {
+
+
+		private Colombia mundo;
+
+
         public Form1()
         {
+			mundo = new Colombia();
             InitializeComponent();
         }
 
@@ -42,6 +48,7 @@ namespace ProyectoNumero2
 
 		}
 
+		
 		private void satelite_Click(object sender, EventArgs e)
 		{
 			gmap.MapProvider = GMapProviders.GoogleChinaSatelliteMap;
@@ -66,6 +73,27 @@ namespace ProyectoNumero2
 		private void zoomMelo_ValueChanged(object sender, EventArgs e)
 		{
 			gmap.Zoom = zoomMelo.Value;
+		}
+
+		private void ABRIROPEN_Click(object sender, EventArgs e)
+		{
+			abrirDialogo.InitialDirectory = ".//DataBase";
+			if (abrirDialogo.ShowDialog() == DialogResult.OK)
+			{
+
+				List<UbicacionesWifi> lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
+
+				for (int i = 0; i < lista.Count; i++)
+				{
+
+					dataGridView1.Rows.Add(lista[i].Municipio, lista[i].PuntoUbicacion
+						, lista[i].Direccion, lista[i].Ubicacion, lista[i].UbicacionDosColumnas);
+				}
+
+
+
+			}
+
 		}
 	}
 }
