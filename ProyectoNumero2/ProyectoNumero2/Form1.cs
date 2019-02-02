@@ -25,17 +25,12 @@ namespace ProyectoNumero2
 
 		private void mapaColombia_Load(object sender, EventArgs e)
 		{
-			
-			gmap.MapProvider = BingHybridMapProvider.Instance;
-			GMaps.Instance.Mode = AccessMode.ServerOnly;
-			gmap.SetPositionByKeywords("France, Paris");
-			//gmap.Position = new GMap.NET.PointLatLng(5.8589507, -50.2775175);
-			gmap.ShowCenter = false;
+            gmap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
+            gmap.Position = new PointLatLng(3.4372201, -76.5224991);
+       
 
-
-			
-
-			GMapOverlay markers = new GMapOverlay("markers");
+            GMapOverlay markers = new GMapOverlay("markers");
 			GMapMarker marker = new GMarkerGoogle(new PointLatLng(48.8617774, 2.349272),GMarkerGoogleType.lightblue);
 			markers.Markers.Add(marker);
 			gmap.Overlays.Add(markers);
