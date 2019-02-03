@@ -36,7 +36,16 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.zoomMelo = new System.Windows.Forms.TrackBar();
 			this.ZOOM = new System.Windows.Forms.Timer(this.components);
+			this.abrirDialogo = new System.Windows.Forms.OpenFileDialog();
+			this.ABRIROPEN = new System.Windows.Forms.Button();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.zoomMelo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// gmap
@@ -120,11 +129,66 @@
 			this.ZOOM.Interval = 10;
 			this.ZOOM.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
+			// abrirDialogo
+			// 
+			this.abrirDialogo.FileName = "AbrirDialogo";
+			// 
+			// ABRIROPEN
+			// 
+			this.ABRIROPEN.Location = new System.Drawing.Point(413, 304);
+			this.ABRIROPEN.Name = "ABRIROPEN";
+			this.ABRIROPEN.Size = new System.Drawing.Size(75, 23);
+			this.ABRIROPEN.TabIndex = 6;
+			this.ABRIROPEN.Text = "Abir";
+			this.ABRIROPEN.UseVisualStyleBackColor = true;
+			this.ABRIROPEN.Click += new System.EventHandler(this.ABRIROPEN_Click);
+			// 
+			// dataGridView1
+			// 
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+			this.dataGridView1.Location = new System.Drawing.Point(384, 96);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.Size = new System.Drawing.Size(404, 193);
+			this.dataGridView1.TabIndex = 7;
+			// 
+			// Column1
+			// 
+			this.Column1.HeaderText = "Column1";
+			this.Column1.Name = "Column1";
+			// 
+			// Column2
+			// 
+			this.Column2.HeaderText = "Column2";
+			this.Column2.Name = "Column2";
+			// 
+			// Column3
+			// 
+			this.Column3.HeaderText = "Column3";
+			this.Column3.Name = "Column3";
+			// 
+			// Column4
+			// 
+			this.Column4.HeaderText = "Column4";
+			this.Column4.Name = "Column4";
+			// 
+			// Column5
+			// 
+			this.Column5.HeaderText = "Column5";
+			this.Column5.Name = "Column5";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.ABRIROPEN);
 			this.Controls.Add(this.zoomMelo);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.Relieve);
@@ -134,6 +198,7 @@
 			this.Name = "Form1";
 			this.Text = "Form1";
 			((System.ComponentModel.ISupportInitialize)(this.zoomMelo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -148,6 +213,14 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TrackBar zoomMelo;
 		private System.Windows.Forms.Timer ZOOM;
+		private System.Windows.Forms.OpenFileDialog abrirDialogo;
+		private System.Windows.Forms.Button ABRIROPEN;
+		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
 	}
 }
 

@@ -18,27 +18,25 @@ namespace ProyectoNumero2
 {
     public partial class Form1 : Form
     {
+
+
+		private Colombia mundo;
+
+
         public Form1()
         {
+			mundo = new Colombia();
             InitializeComponent();
         }
 
 		private void mapaColombia_Load(object sender, EventArgs e)
 		{
-			
-			gmap.MapProvider = BingHybridMapProvider.Instance;
-			GMaps.Instance.Mode = AccessMode.ServerOnly;
-			gmap.SetPositionByKeywords("France, Paris");
-			//gmap.Position = new GMap.NET.PointLatLng(5.8589507, -50.2775175);
-			gmap.ShowCenter = false;
+            gmap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+            GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
+            gmap.Position = new PointLatLng(3.4372201, -76.5224991);
+       
 
-
-			
-
-			GMapOverlay markers = new GMapOverlay("markers");
-			GMapMarker marker = new GMarkerGoogle(new PointLatLng(48.8617774, 2.349272),GMarkerGoogleType.lightblue);
-			markers.Markers.Add(marker);
-			gmap.Overlays.Add(markers);
+            
 
 
 
@@ -47,6 +45,7 @@ namespace ProyectoNumero2
 
 		}
 
+		
 		private void satelite_Click(object sender, EventArgs e)
 		{
 			gmap.MapProvider = GMapProviders.GoogleChinaSatelliteMap;
@@ -71,6 +70,40 @@ namespace ProyectoNumero2
 		private void zoomMelo_ValueChanged(object sender, EventArgs e)
 		{
 			gmap.Zoom = zoomMelo.Value;
+		}
+
+		private void ABRIROPEN_Click(object sender, EventArgs e)
+		{
+			abrirDialogo.InitialDirectory = ".//DataBase";
+			if (abrirDialogo.ShowDialog() == DialogResult.OK)
+			{
+				
+				List<UbicacionesWifi> lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
+
+				for (int i = 0; i < lista.Count; i++)
+				{
+
+					dataGridView1.Rows.Add(lista[i].Municipio, lista[i].PuntoUbicacion
+						, lista[i].Direccion, lista[i].Ubicacion, lista[i].UbicacionDosColumnas);
+
+
+					String este= lista[i].Ubicacion;
+					string strModified = este.Substring(1, este.Length-1);
+					String otro = lista[i].UbicacionDosColumnas;
+					string strModified2 = otro.Substring(0, otro.Length - 2);
+
+					double primero = Convert.ToDouble(strModified);
+					double segundo= Convert.ToDouble(strModified2);
+					GMapOverlay markers = new GMapOverlay("markers");
+					GMapMarker marker = new GMarkerGoogle(new PointLatLng(primero, segundo), GMarkerGoogleType.lightblue);
+					markers.Markers.Add(marker);
+					gmap.Overlays.Add(markers);
+				}
+
+
+
+			}
+
 		}
 	}
 }
