@@ -1,6 +1,6 @@
 ﻿namespace ProyectoNumero2
 {
-    partial class Form1
+    partial class ciudad
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ciudad));
 			this.gmap = new GMap.NET.WindowsForms.GMapControl();
 			this.satelite = new System.Windows.Forms.Button();
 			this.normal = new System.Windows.Forms.Button();
@@ -47,6 +47,7 @@
 			this.labelCiudad = new System.Windows.Forms.Label();
 			this.labelDireccion = new System.Windows.Forms.Label();
 			this.labelUbicacion = new System.Windows.Forms.Label();
+			this.ciudadtext = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.zoomMelo)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
@@ -225,12 +226,20 @@
 			this.labelUbicacion.TabIndex = 14;
 			this.labelUbicacion.Click += new System.EventHandler(this.labelUbicacion_Click);
 			// 
-			// Form1
+			// ciudadtext
+			// 
+			this.ciudadtext.Location = new System.Drawing.Point(676, 259);
+			this.ciudadtext.Name = "ciudadtext";
+			this.ciudadtext.Size = new System.Drawing.Size(100, 20);
+			this.ciudadtext.TabIndex = 15;
+			// 
+			// ciudad
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.ClientSize = new System.Drawing.Size(865, 605);
+			this.Controls.Add(this.ciudadtext);
 			this.Controls.Add(this.labelUbicacion);
 			this.Controls.Add(this.labelDireccion);
 			this.Controls.Add(this.labelCiudad);
@@ -247,7 +256,7 @@
 			this.Controls.Add(this.satelite);
 			this.Controls.Add(this.gmap);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "Form1";
+			this.Name = "ciudad";
 			this.Text = "Zonas wifi";
 			((System.ComponentModel.ISupportInitialize)(this.zoomMelo)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -275,6 +284,7 @@
         private System.Windows.Forms.Label labelCiudad;
         private System.Windows.Forms.Label labelDireccion;
         private System.Windows.Forms.Label labelUbicacion;
-    }
+		private System.Windows.Forms.TextBox ciudadtext;
+	}
 }
 

@@ -17,14 +17,14 @@ using System.Collections;
 
 namespace ProyectoNumero2
 {
-    public partial class Form1 : Form
+    public partial class ciudad : Form
     {
 
 
 		private Colombia mundo;
 
 
-        public Form1()
+        public ciudad()
         {
 			mundo = new Colombia();
             InitializeComponent();
@@ -35,6 +35,16 @@ namespace ProyectoNumero2
             gmap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
             gmap.Position = new PointLatLng(3.4372201, -76.5224991);
+
+	       
+			
+
+		   
+			
+			
+
+
+			
        
 
             
@@ -113,9 +123,6 @@ namespace ProyectoNumero2
 				for (int i = 1; i < lista.Count + 1; i++)
 				{
 
-
-
-
 					string[] linea = lista[i].ToString().Split('_');
 
 
@@ -130,6 +137,7 @@ namespace ProyectoNumero2
 					double segundo = Convert.ToDouble(strModified2);
 					GMapOverlay markers = new GMapOverlay("markers");
 					GMapMarker marker = new GMarkerGoogle(new PointLatLng(primero, segundo), GMarkerGoogleType.purple);
+					
 					markers.Markers.Add(marker);
 					marker.ToolTipText = "" + linea[0] + "\n" + linea[1] +
 						"\n" + linea[2] + "\n" + linea[3] + "\n" + linea[4];
