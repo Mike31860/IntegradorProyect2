@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoNumero2
 {
-	
-	class UbicacionesWifi
+	internal class UbicacionesWifi
 	{
 
 		private string municipio;
@@ -25,6 +24,11 @@ namespace ProyectoNumero2
 			this.UbicacionDosColumnas = ubicacionDosColumnas;
 		}
 
+
+		public override string ToString()
+		{
+			return municipio+" "+PuntoUbicacion+" "+direccion+" "+ubicacion+" "+ubicacionDosColumnas;
+		}
 		public string Municipio { get => municipio; set => municipio = value; }
 		public string PuntoUbicacion { get => puntoUbicacion; set => puntoUbicacion = value; }
 		public string Direccion { get => direccion; set => direccion = value; }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,16 +13,20 @@ namespace ProyectoNumero2
 
 
 		private List<UbicacionesWifi> ubicaciones;
+		
+		private Hashtable es;
+
+		
 
 		public Colombia()
 		{
 			Ubicaciones = new List<UbicacionesWifi>();
-
+			es = new Hashtable();
 
 
 		}
 
-		internal List<UbicacionesWifi> Ubicaciones { get => ubicaciones; set => ubicaciones = value; }
+		
 
 		public List<UbicacionesWifi> abrirArchivoCVS(String ruta)
 		{
@@ -41,6 +46,8 @@ namespace ProyectoNumero2
 				String ubicacionDos = linea2[4];
 			
 				UbicacionesWifi nueva = new UbicacionesWifi(municipio, puntoUbicacion, Direccion, ubicacion, ubicacionDos);
+				es.Add(i-1,nueva);
+
 				Ubicaciones.Add(nueva);
 
 
@@ -50,12 +57,12 @@ namespace ProyectoNumero2
 
 			}
 
-			return Ubicaciones;
+			return ubicaciones;
 
 		}
 
 
-
+		internal List<UbicacionesWifi> Ubicaciones { get => ubicaciones; set => ubicaciones = value; }
 
 
 

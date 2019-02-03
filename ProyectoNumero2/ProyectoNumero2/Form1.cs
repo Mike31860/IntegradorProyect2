@@ -13,6 +13,7 @@ using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
+using System.Collections;
 
 namespace ProyectoNumero2
 {
@@ -79,6 +80,7 @@ namespace ProyectoNumero2
 			{
 				
 				List<UbicacionesWifi> lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
+				
 
 				for (int i = 0; i < lista.Count; i++)
 				{
@@ -97,6 +99,8 @@ namespace ProyectoNumero2
 					GMapOverlay markers = new GMapOverlay("markers");
 					GMapMarker marker = new GMarkerGoogle(new PointLatLng(primero, segundo), GMarkerGoogleType.lightblue);
 					markers.Markers.Add(marker);
+					marker.ToolTipText = ""+ lista[i].Municipio+"\n"+ lista[i].PuntoUbicacion+
+						"\n"+ lista[i].Direccion+ "\n" + lista[i].Ubicacion+ "\n" + lista[i].UbicacionDosColumnas;
 					gmap.Overlays.Add(markers);
 				}
 
