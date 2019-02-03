@@ -83,10 +83,6 @@ namespace ProyectoNumero2
 				for (int i = 0; i < lista.Count; i++)
 				{
 
-					dataGridView1.Rows.Add(lista[i].Municipio, lista[i].PuntoUbicacion
-						, lista[i].Direccion, lista[i].Ubicacion, lista[i].UbicacionDosColumnas);
-
-
 					String este= lista[i].Ubicacion;
 					string strModified = este.Substring(1, este.Length-1);
 					String otro = lista[i].UbicacionDosColumnas;
@@ -105,5 +101,26 @@ namespace ProyectoNumero2
 			}
 
 		}
-	}
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+       
+        private void labelUbicacion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelDireccion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelCiudad_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
