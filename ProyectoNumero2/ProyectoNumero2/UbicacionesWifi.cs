@@ -13,22 +13,22 @@ namespace ProyectoNumero2
 		private string municipio;
 		private string puntoUbicacion;
 		private string direccion;
-		private int ubicacion;
-		private int ubicacionDosColumnas;
+		private string ubicacion;
+		private string ubicacionDosColumnas;
 
-		public UbicacionesWifi(string municipio, string puntoUbicacion, string direccion, int ubicacion, int ubicacionDos)
+		public UbicacionesWifi(string municipio, string puntoUbicacion, string direccion, string ubicacion, string ubicacionDosColumnas)
 		{
-			this.Municipio = municipio;
-			this.PuntoUbicacion = puntoUbicacion;
-			this.Direccion = direccion;
+			this.municipio = municipio;
+			this.puntoUbicacion = puntoUbicacion;
+			this.direccion = direccion;
 			this.Ubicacion = ubicacion;
-			this.UbicacionDosColumnas = ubicacionDos;
+			this.UbicacionDosColumnas = ubicacionDosColumnas;
 		}
 
 		public string Municipio { get => municipio; set => municipio = value; }
 		public string PuntoUbicacion { get => puntoUbicacion; set => puntoUbicacion = value; }
 		public string Direccion { get => direccion; set => direccion = value; }
-		public int Ubicacion { get => ubicacion; set => ubicacion = value; }
-		public int UbicacionDosColumnas { get => ubicacionDosColumnas; set => ubicacionDosColumnas = value; }
+		public string Ubicacion { get => ubicacion; set => ubicacion = value; }
+		public string UbicacionDosColumnas { get => ubicacionDosColumnas; set => ubicacionDosColumnas = value; }
 	}
 }
