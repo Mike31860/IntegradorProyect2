@@ -144,7 +144,7 @@
             this.ABRIROPEN.TabIndex = 6;
             this.ABRIROPEN.Text = "Abir";
             this.ABRIROPEN.UseVisualStyleBackColor = true;
-            this.ABRIROPEN.Click += new System.EventHandler(this.ABRIROPEN_Click);
+            //this.ABRIROPEN.Click += new System.EventHandler(this.ABRIROPEN_Click);
             // 
             // pictureBox1
             // 

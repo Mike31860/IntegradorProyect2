@@ -13,6 +13,7 @@ using GMap.NET;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
+using System.Collections;
 
 namespace ProyectoNumero2
 {
@@ -72,35 +73,47 @@ namespace ProyectoNumero2
 			gmap.Zoom = zoomMelo.Value;
 		}
 
-		private void ABRIROPEN_Click(object sender, EventArgs e)
-		{
-			abrirDialogo.InitialDirectory = ".//DataBase";
-			if (abrirDialogo.ShowDialog() == DialogResult.OK)
-			{
+		//private void ABRIROPEN_Click(object sender, EventArgs e)
+		//{
+		//	abrirDialogo.InitialDirectory = ".//DataBase";
+		//	if (abrirDialogo.ShowDialog() == DialogResult.OK)
+		//	{
 				
-				List<UbicacionesWifi> lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
+		//		Hashtable lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
+				
 
-				for (int i = 0; i < lista.Count; i++)
-				{
-
-					String este= lista[i].Ubicacion;
-					string strModified = este.Substring(1, este.Length-1);
-					String otro = lista[i].UbicacionDosColumnas;
-					string strModified2 = otro.Substring(0, otro.Length - 2);
-
-					double primero = Convert.ToDouble(strModified);
-					double segundo= Convert.ToDouble(strModified2);
-					GMapOverlay markers = new GMapOverlay("markers");
-					GMapMarker marker = new GMarkerGoogle(new PointLatLng(primero, segundo), GMarkerGoogleType.lightblue);
-					markers.Markers.Add(marker);
-					gmap.Overlays.Add(markers);
-				}
+		//		for (int i = 1; i < lista.Count+1; i++)
+		//		{
 
 
+		//			string este= lista[i].Ubicacion;
 
-			}
+		//			string[] linea = lista[i].ToString().Split('_');
+					
 
-		}
+
+		//			String estee = linea[3];
+
+		//			string strModified = este.Substring(1, este.Length-1);
+		//			String otro = linea[4];
+		//			string strModified2 = otro.Substring(0, otro.Length - 2);
+
+		//			double primero = Convert.ToDouble(strModified);
+		//			double segundo= Convert.ToDouble(strModified2);
+		//			GMapOverlay markers = new GMapOverlay("markers");
+		//			GMapMarker marker = new GMarkerGoogle(new PointLatLng(primero, segundo), GMarkerGoogleType.purple);
+		//			markers.Markers.Add(marker);
+		//			marker.ToolTipText = ""+ linea[0]+"\n"+ linea[1]+
+		//				"\n"+ linea[2]+ "\n" + linea[3]+ "\n" + linea[4];
+		//			gmap.Overlays.Add(markers);
+		//		}
+
+
+
+		//	}
+
+		//}
+        //Descomentar linea 147 en el form1.Designer
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
