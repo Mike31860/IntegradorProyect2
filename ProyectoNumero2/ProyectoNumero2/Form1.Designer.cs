@@ -41,15 +41,18 @@
 			this.ABRIROPEN = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
 			this.labelCiudad = new System.Windows.Forms.Label();
 			this.labelDireccion = new System.Windows.Forms.Label();
 			this.labelUbicacion = new System.Windows.Forms.Label();
-			this.ciudadtext = new System.Windows.Forms.TextBox();
+			this.data = new System.Windows.Forms.DataGridView();
+			this.Municipio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.PuntoUbicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Ubicación = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.UbicaciónDos = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.zoomMelo)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// gmap
@@ -74,7 +77,7 @@
 			this.gmap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
 			this.gmap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
 			this.gmap.ShowTileGridLines = false;
-			this.gmap.Size = new System.Drawing.Size(523, 330);
+			this.gmap.Size = new System.Drawing.Size(549, 330);
 			this.gmap.TabIndex = 0;
 			this.gmap.Zoom = 5D;
 			this.gmap.Load += new System.EventHandler(this.mapaColombia_Load);
@@ -139,7 +142,7 @@
 			// 
 			// ABRIROPEN
 			// 
-			this.ABRIROPEN.Location = new System.Drawing.Point(676, 554);
+			this.ABRIROPEN.Location = new System.Drawing.Point(875, 536);
 			this.ABRIROPEN.Name = "ABRIROPEN";
 			this.ABRIROPEN.Size = new System.Drawing.Size(75, 23);
 			this.ABRIROPEN.TabIndex = 6;
@@ -152,7 +155,7 @@
 			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
 			this.pictureBox1.Location = new System.Drawing.Point(37, 25);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(781, 136);
+			this.pictureBox1.Size = new System.Drawing.Size(1111, 148);
 			this.pictureBox1.TabIndex = 7;
 			this.pictureBox1.TabStop = false;
 			// 
@@ -160,41 +163,11 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(622, 179);
+			this.label2.Location = new System.Drawing.Point(834, 179);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(162, 24);
 			this.label2.TabIndex = 8;
 			this.label2.Text = "Datos de la zona";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(588, 259);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(68, 21);
-			this.label3.TabIndex = 9;
-			this.label3.Text = "Ciudad:";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(588, 348);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(85, 21);
-			this.label4.TabIndex = 10;
-			this.label4.Text = "Dirección:";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(587, 444);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(89, 21);
-			this.label5.TabIndex = 11;
-			this.label5.Text = "Ubicación:";
 			// 
 			// labelCiudad
 			// 
@@ -226,26 +199,55 @@
 			this.labelUbicacion.TabIndex = 14;
 			this.labelUbicacion.Click += new System.EventHandler(this.labelUbicacion_Click);
 			// 
-			// ciudadtext
+			// data
 			// 
-			this.ciudadtext.Location = new System.Drawing.Point(676, 259);
-			this.ciudadtext.Name = "ciudadtext";
-			this.ciudadtext.Size = new System.Drawing.Size(100, 20);
-			this.ciudadtext.TabIndex = 15;
+			this.data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Municipio,
+            this.PuntoUbicacion,
+            this.Column3,
+            this.Ubicación,
+            this.UbicaciónDos});
+			this.data.Location = new System.Drawing.Point(629, 216);
+			this.data.Name = "data";
+			this.data.Size = new System.Drawing.Size(530, 279);
+			this.data.TabIndex = 15;
+			// 
+			// Municipio
+			// 
+			this.Municipio.HeaderText = "Municipio";
+			this.Municipio.Name = "Municipio";
+			// 
+			// PuntoUbicacion
+			// 
+			this.PuntoUbicacion.HeaderText = "Punto Ubicación";
+			this.PuntoUbicacion.Name = "PuntoUbicacion";
+			// 
+			// Column3
+			// 
+			this.Column3.HeaderText = "Dirección";
+			this.Column3.Name = "Column3";
+			// 
+			// Ubicación
+			// 
+			this.Ubicación.HeaderText = "Ubicación";
+			this.Ubicación.Name = "Ubicación";
+			// 
+			// UbicaciónDos
+			// 
+			this.UbicaciónDos.HeaderText = "UbicaciónDos";
+			this.UbicaciónDos.Name = "UbicaciónDos";
 			// 
 			// ciudad
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.ClientSize = new System.Drawing.Size(865, 605);
-			this.Controls.Add(this.ciudadtext);
+			this.ClientSize = new System.Drawing.Size(1171, 641);
+			this.Controls.Add(this.data);
 			this.Controls.Add(this.labelUbicacion);
 			this.Controls.Add(this.labelDireccion);
 			this.Controls.Add(this.labelCiudad);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.ABRIROPEN);
@@ -260,6 +262,7 @@
 			this.Text = "Zonas wifi";
 			((System.ComponentModel.ISupportInitialize)(this.zoomMelo)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.data)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -278,13 +281,15 @@
 		private System.Windows.Forms.Button ABRIROPEN;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label labelCiudad;
         private System.Windows.Forms.Label labelDireccion;
         private System.Windows.Forms.Label labelUbicacion;
-		private System.Windows.Forms.TextBox ciudadtext;
+		private System.Windows.Forms.DataGridView data;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Municipio;
+		private System.Windows.Forms.DataGridViewTextBoxColumn PuntoUbicacion;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Ubicación;
+		private System.Windows.Forms.DataGridViewTextBoxColumn UbicaciónDos;
 	}
 }
 

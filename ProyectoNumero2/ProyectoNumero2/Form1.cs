@@ -125,7 +125,7 @@ namespace ProyectoNumero2
 
 					string[] linea = lista[i].ToString().Split('_');
 
-
+					data.Rows.Add(linea[0], linea[1], linea[2], linea[3], linea[4]);
 
 					String estee = linea[3];
 
