@@ -28,7 +28,7 @@ namespace ProyectoNumero2
 
 		
 
-		public List<UbicacionesWifi> abrirArchivoCVS(String ruta)
+		public Hashtable abrirArchivoCVS(String ruta)
 		{
 			
 
@@ -46,7 +46,7 @@ namespace ProyectoNumero2
 				String ubicacionDos = linea2[4];
 			
 				UbicacionesWifi nueva = new UbicacionesWifi(municipio, puntoUbicacion, Direccion, ubicacion, ubicacionDos);
-				es.Add(i-1,nueva);
+				es.Add(i,nueva);
 
 				Ubicaciones.Add(nueva);
 
@@ -57,7 +57,7 @@ namespace ProyectoNumero2
 
 			}
 
-			return ubicaciones;
+			return es;
 
 		}
 

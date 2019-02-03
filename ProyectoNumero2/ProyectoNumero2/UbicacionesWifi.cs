@@ -24,10 +24,10 @@ namespace ProyectoNumero2
 			this.UbicacionDosColumnas = ubicacionDosColumnas;
 		}
 
-
-		public override string ToString()
+		override
+		public string ToString()
 		{
-			return municipio+" "+PuntoUbicacion+" "+direccion+" "+ubicacion+" "+ubicacionDosColumnas;
+			return this.municipio+"_"+this.PuntoUbicacion+"_"+this.direccion+"_"+this.ubicacion+"_"+this.ubicacionDosColumnas;
 		}
 		public string Municipio { get => municipio; set => municipio = value; }
 		public string PuntoUbicacion { get => puntoUbicacion; set => puntoUbicacion = value; }

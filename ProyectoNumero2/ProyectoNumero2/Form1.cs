@@ -79,19 +79,20 @@ namespace ProyectoNumero2
 			if (abrirDialogo.ShowDialog() == DialogResult.OK)
 			{
 				
-				List<UbicacionesWifi> lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
+				Hashtable lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
 				
 
-				for (int i = 0; i < lista.Count; i++)
+				for (int i = 1; i < lista.Count+1; i++)
 				{
 
-					dataGridView1.Rows.Add(lista[i].Municipio, lista[i].PuntoUbicacion
-						, lista[i].Direccion, lista[i].Ubicacion, lista[i].UbicacionDosColumnas);
+					String[] linea = lista[i].ToString().Split('_');
+					dataGridView1.Rows.Add(linea[0], linea[1]
+						, linea[2], linea[3], linea[4]);
 
 
-					String este= lista[i].Ubicacion;
+					String este= linea[3];
 					string strModified = este.Substring(1, este.Length-1);
-					String otro = lista[i].UbicacionDosColumnas;
+					String otro = linea[4];
 					string strModified2 = otro.Substring(0, otro.Length - 2);
 
 					double primero = Convert.ToDouble(strModified);
@@ -99,8 +100,8 @@ namespace ProyectoNumero2
 					GMapOverlay markers = new GMapOverlay("markers");
 					GMapMarker marker = new GMarkerGoogle(new PointLatLng(primero, segundo), GMarkerGoogleType.lightblue);
 					markers.Markers.Add(marker);
-					marker.ToolTipText = ""+ lista[i].Municipio+"\n"+ lista[i].PuntoUbicacion+
-						"\n"+ lista[i].Direccion+ "\n" + lista[i].Ubicacion+ "\n" + lista[i].UbicacionDosColumnas;
+					marker.ToolTipText = ""+ linea[0]+"\n"+ linea[1]+
+						"\n"+ linea[2]+ "\n" + linea[3]+ "\n" + linea[4];
 					gmap.Overlays.Add(markers);
 				}
 
