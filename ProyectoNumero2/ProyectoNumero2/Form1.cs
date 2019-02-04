@@ -88,7 +88,7 @@ namespace ProyectoNumero2
 			
 
 		}
-        //Descomentar linea 147 en el form1.Designer
+        
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -152,6 +152,9 @@ namespace ProyectoNumero2
 
 		}
 
-       
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

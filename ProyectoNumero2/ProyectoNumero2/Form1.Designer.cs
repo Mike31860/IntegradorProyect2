@@ -155,7 +155,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(37, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1033, 138);
+            this.pictureBox1.Size = new System.Drawing.Size(1100, 138);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -163,11 +163,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(834, 179);
+            this.label2.Location = new System.Drawing.Point(816, 188);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 24);
             this.label2.TabIndex = 8;
             this.label2.Text = "Datos de la zona";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelCiudad
             // 
@@ -208,7 +209,7 @@
             this.Column3,
             this.Ubicación,
             this.UbicaciónDos});
-            this.data.Location = new System.Drawing.Point(629, 216);
+            this.data.Location = new System.Drawing.Point(607, 230);
             this.data.Name = "data";
             this.data.Size = new System.Drawing.Size(530, 279);
             this.data.TabIndex = 15;
@@ -243,7 +244,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1171, 641);
+            this.ClientSize = new System.Drawing.Size(1171, 598);
             this.Controls.Add(this.data);
             this.Controls.Add(this.labelUbicacion);
             this.Controls.Add(this.labelDireccion);
