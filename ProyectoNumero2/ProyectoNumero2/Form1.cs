@@ -113,8 +113,10 @@ namespace ProyectoNumero2
 
 		private void ABRIROPEN_Click_1(object sender, EventArgs e)
 		{
-			abrirDialogo.InitialDirectory = ".//DataBase";
-			if (abrirDialogo.ShowDialog() == DialogResult.OK)
+			abrirDialogo.InitialDirectory = @"\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2";
+           
+
+            if (abrirDialogo.ShowDialog() == DialogResult.OK)
 			{
 
 				Hashtable lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
@@ -149,5 +151,7 @@ namespace ProyectoNumero2
 			}
 
 		}
-	}
+
+       
+    }
 }
