@@ -23,7 +23,7 @@ namespace ProyectoNumero2
 
 		private Colombia mundo;
 
-
+		//esto esta echo !!!!!!!!!!
         public ciudad()
         {
 			mundo = new Colombia();
