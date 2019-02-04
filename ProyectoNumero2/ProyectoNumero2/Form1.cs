@@ -120,7 +120,7 @@ namespace ProyectoNumero2
 			{
 
 				Hashtable lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
-
+				GMapOverlay markers = new GMapOverlay("markers");
 
 				for (int i = 1; i < lista.Count + 1; i++)
 				{
@@ -129,23 +129,23 @@ namespace ProyectoNumero2
 
 					data.Rows.Add(linea[0], linea[1], linea[2], linea[3], linea[4]);
 
-					String estee = linea[3];
+					string estee = linea[3];
 
 					string strModified = estee.Substring(1, estee.Length - 1);
-					String otro = linea[4];
+					string otro = linea[4];
 					string strModified2 = otro.Substring(0, otro.Length - 2);
 
 					double primero = Convert.ToDouble(strModified);
 					double segundo = Convert.ToDouble(strModified2);
-					GMapOverlay markers = new GMapOverlay("markers");
+					
 					GMapMarker marker = new GMarkerGoogle(new PointLatLng(primero, segundo), GMarkerGoogleType.purple);
 					
 					markers.Markers.Add(marker);
 					marker.ToolTipText = "" + linea[0] + "\n" + linea[1] +
 						"\n" + linea[2] + "\n" + linea[3] + "\n" + linea[4];
-					gmap.Overlays.Add(markers);
+					
 				}
-
+				gmap.Overlays.Add(markers);
 
 
 			}
@@ -156,5 +156,10 @@ namespace ProyectoNumero2
         {
 
         }
-    }
+
+		private void zoomMelo_Scroll(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

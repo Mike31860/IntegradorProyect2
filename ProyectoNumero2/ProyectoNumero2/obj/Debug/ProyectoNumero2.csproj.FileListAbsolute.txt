@@ -48,3 +48,28 @@ C:\Users\Miguel\Desktop\Semestres\Semestre 5\Proyecto Integrador\New folder\Proy
 C:\Users\Miguel\Desktop\Semestres\Semestre 5\Proyecto Integrador\New folder\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.pdb
 C:\Users\Miguel\Desktop\Semestres\Semestre 5\Proyecto Integrador\New folder\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.ciudad.resources
 C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.ciudad.resources
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\ProyectoNumero2.exe.config
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\ProyectoNumero2.exe
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\ProyectoNumero2.pdb
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\EntityFramework.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\GMap.NET.Core.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\System.Data.SQLite.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\EntityFramework.xml
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\System.Data.SQLite.xml
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.csprojAssemblyReference.cache
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.ciudad.resources
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.Properties.Resources.resources
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.csproj.GenerateResource.cache
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.csproj.CopyComplete
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.exe
+C:\Users\Miguel\Desktop\CarpetaIntegrador\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.pdb
