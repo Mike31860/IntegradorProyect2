@@ -88,7 +88,7 @@ namespace ProyectoNumero2
 			
 
 		}
-        //Descomentar linea 147 en el form1.Designer
+        
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -113,8 +113,10 @@ namespace ProyectoNumero2
 
 		private void ABRIROPEN_Click_1(object sender, EventArgs e)
 		{
-			abrirDialogo.InitialDirectory = ".//DataBase";
-			if (abrirDialogo.ShowDialog() == DialogResult.OK)
+			abrirDialogo.InitialDirectory = @"\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2";
+           
+
+            if (abrirDialogo.ShowDialog() == DialogResult.OK)
 			{
 
 				Hashtable lista = mundo.abrirArchivoCVS(abrirDialogo.FileName);
@@ -149,5 +151,10 @@ namespace ProyectoNumero2
 			}
 
 		}
-	}
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

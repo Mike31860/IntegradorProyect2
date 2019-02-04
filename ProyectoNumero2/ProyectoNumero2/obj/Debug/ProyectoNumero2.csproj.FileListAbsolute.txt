@@ -16,7 +16,6 @@ C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorPr
 C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\System.Data.SQLite.xml
 C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.csprojAssemblyReference.cache
-C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.Form1.resources
 C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.Properties.Resources.resources
 C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.csproj.GenerateResource.cache
 C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.csproj.CoreCompileInputs.cache
@@ -48,3 +47,4 @@ C:\Users\Miguel\Desktop\Semestres\Semestre 5\Proyecto Integrador\New folder\Proy
 C:\Users\Miguel\Desktop\Semestres\Semestre 5\Proyecto Integrador\New folder\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.exe
 C:\Users\Miguel\Desktop\Semestres\Semestre 5\Proyecto Integrador\New folder\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.pdb
 C:\Users\Miguel\Desktop\Semestres\Semestre 5\Proyecto Integrador\New folder\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.ciudad.resources
+C:\Users\aleja\Documents\Universidad\Semestre5\Integrador\Proyecto2\IntegradorProyect2\ProyectoNumero2\ProyectoNumero2\obj\Debug\ProyectoNumero2.ciudad.resources
